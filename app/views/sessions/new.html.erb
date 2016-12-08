@@ -1,0 +1,10 @@
+<%= form_for @user, :url => signin_path do |f| %>
+  <%= f.label :name, "Enter Name" %>
+  <%= f.text_field :name %>
+
+  <%= f.label :password, "Enter Password" %>
+  <%= f.password_field :password %>
+
+  <%= f.submit "Sign In" %>
+
+<% end %>
